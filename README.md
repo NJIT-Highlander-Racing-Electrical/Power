@@ -14,7 +14,10 @@ Things to consider are:
 
     
 * What standardized cables are we using to send CAN Bus signals throughout the vehicle?
+
+ 
 * What standardized connectors are we using to disconnect each subsystem
+   * 4-pin Aviation Plug Connectors
 
 * How we are stepping down the power from 12V to 5V for each subsystem
   * We can use 5V Voltage Regulators on each subsystem so that each system has a steady 5V, even if the 12V input drops.
