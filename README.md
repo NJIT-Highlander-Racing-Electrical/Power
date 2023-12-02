@@ -4,13 +4,12 @@ Things to consider are:
   * We can use the Zippy 5000mAh 11.1v batteries
   * If we need a higher capacity, we can run two charged and balanced batteries in parallel
   
-* How can we contain these batteries physically and what connectors will we use?
-
-* Can we replace the connectors on the current batteries with XT60 or XT150, and get mating female ones for the vehicle?
-
-* What battery management system we are using
+* We can make a two battery holder for the car with vertical slots and a horizontal cover bar with two thumb screws that lock the batteries into place
+   
+* we can replace the current battery connectors with XT60, and solder female XT60s to the power bus (two in parallel)
 
 * How we can detect low battery and display it via and LED on the dashboard
+* How can we shut off the power when the battery voltage gets too low to protect them?
 
 * What standardized cables are we using to get 12V to each subsystem
   * Peak estimated power consumption:
