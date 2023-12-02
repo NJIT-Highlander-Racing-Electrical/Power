@@ -1,6 +1,15 @@
 # Power
 Things to consider are:
 * Which battery we are going to use to power all the subsystems (preferably 12V)
+  * We can use the Zippy 5000mAh 11.1v batteries
+  * If we need a higher capacity, we can run two charged and balanced batteries in parallel
+  
+* How can we contain these batteries physically and what connectors will we use?
+
+* What battery management system we are using
+
+* How we can detect low battery and display it via and LED on the dashboard
+
 * What standardized cables are we using to get 12V to each subsystem
   * Peak estimated power consumption:
       * CVT: 1 amp
@@ -21,5 +30,4 @@ Things to consider are:
 
 * How we are stepping down the power from 12V to 5V for each subsystem
   * We can use 5V Voltage Regulators on each subsystem so that each system has a steady 5V, even if the 12V input drops.
-* What battery management system we are using
-* How we can detect low battery and display it via and LED on the dashboard
+  * The ESP32 can also output 3.3V from the 5V we supply if needed for its subsystems
