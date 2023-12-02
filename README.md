@@ -6,6 +6,8 @@ Things to consider are:
   
 * How can we contain these batteries physically and what connectors will we use?
 
+* Can we replace the connectors on the current batteries with XT60 or XT150, and get mating female ones for the vehicle?
+
 * What battery management system we are using
 
 * How we can detect low battery and display it via and LED on the dashboard
