@@ -1,34 +1,17 @@
 # Power
-Things to consider are:
-* Which battery we are going to use to power all the subsystems (preferably 12V)
-  * We can use the Zippy 5000mAh 11.1v batteries
-  * If we need a higher capacity, we can run two charged and balanced batteries in parallel
-  
-* We can make a two battery holder for the car with vertical slots and a horizontal cover bar with two thumb screws that lock the batteries into place
-   
-* we can replace the current battery connectors with XT60, and solder female XT60s to the power bus (two in parallel)
 
-* How we can detect low battery and display it via and LED on the dashboard
-* How can we shut off the power when the battery voltage gets too low to protect them?
-
-* What standardized cables are we using to get 12V to each subsystem
-  * Peak estimated power consumption:
-      * CVT: 1 amp
-      * Dashboard: 2 amp
-      * DAQ: 3 amp
-      * Steering Angle/Pedals: 1 amp
-      * Seat Pressure Mat: 1 amp
-      * Total (maximum): 8 amps
-  * Using 14 gauge wire should support 10+ Amps
-  * We can use 24 gauge wire to split off to smaller subsystems
-
-    
-* What standardized cables are we using to send CAN Bus signals throughout the vehicle?
-
- 
-* What standardized connectors are we using to disconnect each subsystem
-   * 4-pin Aviation Plug Connectors
-
-* How we are stepping down the power from 12V to 5V for each subsystem
-  * We can use 5V Voltage Regulators on each subsystem so that each system has a steady 5V, even if the 12V input drops.
-  * The ESP32 can also output 3.3V from the 5V we supply if needed for its subsystems
+* Zippy 5000mAh 11.1v batteries
+  ** Can be ran in parallel after balancing for extra capacity
+  ** Housed in a 3D printed dual battery holder
+  ** Two thumb screws lock the batteries into place with a cover bar
+* 14 AWG wire for main power bus connections
+* 24 AWG wire to split off to smaller subsystems 
+* Battery Management System
+   ** Uses a Low Voltage Disconnect Module to cut off battery power when battery voltage gets too low
+   ** BMS can detect low battery to turn on Low Battery LED on dashboard
+* CAN-Bus signals are sent over 24 AWG twisted pair wire
+* All subsystems use 4-pin Aviation Plug Connectors for 12V power and CAN-Bus signals
+* All subsystems will have a 5V switching regulators
+   ** Running the vehicle power bus at 12V but each subsystem only requiring 5V allows for a voltage drop on the bus without issues
+   ** Switching regulators are far more efficient than linear regulators, which would get too hot stepping down from 12V to 5V at higher loads
+   ** The ESP32 can also output 3.3V from the 5V we supply if needed for its subsystems
