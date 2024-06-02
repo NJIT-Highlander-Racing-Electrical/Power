@@ -8,7 +8,7 @@
   * Two thumb screws lock the batteries into place with a cover bar
 * Battery Management System
   * Uses a Low Voltage Disconnect Module to cut off battery power when battery voltage gets too low
-  * BMS can detect low battery to turn on Low Battery LED on dashboard
+  * Ideally includes short circuit protection or fuse
 
 ## Wiring
 
