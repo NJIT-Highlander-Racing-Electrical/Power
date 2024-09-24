@@ -1,5 +1,7 @@
 # Power
 
+A repository dedicated to everything power-related: batteries, conenctors, wiring, battery management, systems, and more.
+
 ## Batteries
 
 * Zippy 5000mAh 11.1v batteries
