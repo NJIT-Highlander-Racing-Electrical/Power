@@ -4,13 +4,11 @@ This section should have a rough outline of the research you have done for your 
 
 ## Idea 1
 
-* This could be a summary of one potential solution you found
-* Along with a short description
-* And any important links
+LM2576 IC TO 263 package
+  - Add complementary passive components to make our own 5V buck converter
+  - Connector XT-30 connectors
 
 ### Pros:
-* These are the benefits of this idea
-
+* Cost under 5 dollars per piece (if we make over 10).
 ### Cons:
-* These are the drawbacks of your ideas
-* Cost, size, complexity, etc
+* Complexity
