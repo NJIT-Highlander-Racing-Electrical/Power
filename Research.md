@@ -1,7 +1,5 @@
 # Research
 
-This section should have a rough outline of the research you have done for your project
-
 ## Idea 1
 
 LM2576 IC TO 263 package
