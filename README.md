@@ -1,6 +1,6 @@
 # Power
 
-A repository dedicated to everything power-related: batteries, conenctors, wiring, battery management, systems, and more.
+A repository dedicated to everything power-related: batteries, connectors, wiring, battery management, systems, and more.
 
 ## Batteries
 
